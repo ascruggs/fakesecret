@@ -9,6 +9,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20100602225953) do
+
+  create_table "posts", :force => true do |t|
+    t.string   "week"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "secrets", :force => true do |t|
+    t.integer  "post_id"
+    t.string   "image_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "votes", :force => true do |t|
+    t.integer  "secret_id"
+    t.integer  "opinion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

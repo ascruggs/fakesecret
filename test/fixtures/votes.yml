@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  secret_id: 1
+  opinion: 1
+
+two:
+  secret_id: 1
+  opinion: 1
