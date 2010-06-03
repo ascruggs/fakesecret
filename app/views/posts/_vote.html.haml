@@ -1,0 +1,4 @@
+=form_for :vote, :url => { :controller => "votes" } do |f|
+  =hidden_field_tag :id, secret.id
+  =hidden_field_tag :opinion, vote_value(vote)
+  =f.submit vote_submit_text(vote, secret)
