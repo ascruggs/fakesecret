@@ -1,3 +1,3 @@
-namespace :cron => :environment do
+task :cron => :environment do
   SecretPopulator.find_and_create
 end
