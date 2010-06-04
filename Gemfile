@@ -11,7 +11,7 @@ gem	'rr'
 gem 'chronic'
 gem 'haml'
               
-group :production => do
+group :production do
 	gem 'pg'
 end
 
