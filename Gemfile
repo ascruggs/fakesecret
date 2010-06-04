@@ -10,7 +10,10 @@ gem 'mechanize'
 gem	'rr'
 gem 'chronic'
 gem 'haml'
-
+              
+group :production => do
+	gem 'pg'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
