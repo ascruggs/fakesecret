@@ -11,5 +11,6 @@
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
+    %h1 FakeSecret
     %div{:class => Rails.env.development? ? [:container, :showgrid] : [:container]}
       = yield
